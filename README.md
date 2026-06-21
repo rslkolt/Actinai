@@ -1,7 +1,7 @@
 <h1 align="center">Actinai</h1>
 
 <p align="center">
-  Нода-редактор для генерации изображений и видео через OpenRouter.<br>
+  Интерфейс для генерации изображений и видео через OpenRouter.<br>
   A node-based editor for AI image &amp; video generation, powered by OpenRouter.
 </p>
 
