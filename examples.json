@@ -1,75 +1,334 @@
 {
-  "version": 1,
-  "updated": "2026-06-21",
+  "version": 2,
+  "updated": "2026-06-22",
+  "note": "Curated prompt base for Actinai. Original prompts inspired by trending themes. Use [brackets] as placeholders to fill in your own subject.",
   "categories": [
     {
-      "id": "portrait",
-      "name": { "en": "Portraits", "ru": "Портреты" },
+      "id": "avatar",
+      "name": { "en": "Avatar & profile", "ru": "Аватар и профиль" },
       "prompts": [
-        { "title": { "en": "Studio headshot", "ru": "Студийный портрет" }, "text": "professional studio headshot of a person, soft key light with subtle rim light, neutral seamless grey backdrop, shallow depth of field, sharp catchlight in the eyes, natural skin texture, 85mm lens look" },
-        { "title": { "en": "Golden hour close-up", "ru": "Портрет на закате" }, "text": "intimate close-up portrait at golden hour, warm backlight, soft bokeh, gentle lens flare, freckles and fine skin detail, cinematic color, 50mm f/1.4" },
-        { "title": { "en": "Dramatic B&W", "ru": "Драматичный ч/б" }, "text": "high-contrast black and white portrait, single hard light source, deep shadows, film grain, expressive mood, fine detail in eyes, classic Rembrandt lighting" },
-        { "title": { "en": "Editorial fashion", "ru": "Фэшн-съёмка" }, "text": "editorial fashion portrait, bold styling, colored gel lighting, confident pose, magazine cover aesthetic, crisp focus, high dynamic range" }
+        { "title": { "en": "Pro headshot (LinkedIn)", "ru": "Деловой портрет (LinkedIn)" },
+          "text": { "en": "Professional corporate headshot of [a person], confident friendly expression, wearing [a dark blazer], clean softly blurred office background, soft key light with subtle rim light, sharp eyes, natural skin texture, shot on 85mm f/2, vertical 4:5, ultra realistic.", "ru": "Профессиональный деловой портрет [человека], уверенное доброжелательное выражение, в [тёмном пиджаке], чистый размытый офисный фон, мягкий рисующий свет с лёгким контровым, резкие глаза, естественная кожа, объектив 85мм f/2, вертикаль 4:5, ультра-реалистично." } },
+        { "title": { "en": "Stylized 3D avatar", "ru": "Стилизованный 3D-аватар" },
+          "text": { "en": "Cute stylized 3D character avatar of [a person], big expressive eyes, smooth clay-like shading, soft studio lighting, pastel background, centered bust shot, Pixar-inspired, high detail, 1:1.", "ru": "Милый стилизованный 3D-аватар [человека], большие выразительные глаза, мягкий «глиняный» шейдинг, мягкий студийный свет, пастельный фон, портрет по грудь по центру, в духе Pixar, высокая детализация, 1:1." } },
+        { "title": { "en": "Minimal line avatar", "ru": "Минимал-аватар линией" },
+          "text": { "en": "Minimalist single-line-art avatar of [a person], clean continuous black line on a solid [beige] background, modern flat design, lots of negative space, elegant, 1:1.", "ru": "Минималистичный аватар одной линией [человека], чистая непрерывная чёрная линия на однотонном [бежевом] фоне, современный плоский дизайн, много свободного пространства, элегантно, 1:1." } },
+        { "title": { "en": "Neon gamer avatar", "ru": "Неоновый гейм-аватар" },
+          "text": { "en": "Bold gaming profile avatar of [a person/character], dramatic neon rim lighting in cyan and magenta, dark moody background, high contrast, energetic, slightly stylized, crisp detail, 1:1.", "ru": "Яркий игровой аватар [персонажа], драматичный неоновый контровой свет циан и магента, тёмный атмосферный фон, высокий контраст, энергично, лёгкая стилизация, чёткая детализация, 1:1." } },
+        { "title": { "en": "Watercolor portrait avatar", "ru": "Акварельный аватар" },
+          "text": { "en": "Soft watercolor portrait avatar of [a person], delicate washes, loose brush strokes, light paper texture, gentle pastel palette, airy and warm, 1:1.", "ru": "Мягкий акварельный портрет-аватар [человека], нежные заливки, свободные мазки, лёгкая фактура бумаги, нежная пастельная палитра, воздушно и тепло, 1:1." } },
+        { "title": { "en": "Corporate team style", "ru": "Единый стиль для команды" },
+          "text": { "en": "Clean professional portrait of [a person] on a neutral [light grey] seamless background, even soft lighting, natural smile, consistent corporate style suitable for a team page, sharp focus, 1:1.", "ru": "Чистый профессиональный портрет [человека] на нейтральном [светло-сером] бесшовном фоне, ровный мягкий свет, естественная улыбка, единый корпоративный стиль для страницы команды, резкий фокус, 1:1." } },
+        { "title": { "en": "Vintage film portrait", "ru": "Винтажный плёночный портрет" },
+          "text": { "en": "Nostalgic film-photo portrait of [a person], warm faded tones, soft grain, gentle light leak, 90s analog aesthetic, natural pose, shallow depth of field, 4:5.", "ru": "Ностальгический плёночный портрет [человека], тёплые выцветшие тона, мягкое зерно, лёгкий засвет, аналоговая эстетика 90-х, естественная поза, малая глубина резкости, 4:5." } },
+        { "title": { "en": "Black & white editorial", "ru": "Чёрно-белый эдиториал" },
+          "text": { "en": "High-end black and white portrait of [a person], single soft window light, deep rich shadows, fine skin detail, calm confident gaze, timeless editorial mood, 4:5.", "ru": "Премиальный чёрно-белый портрет [человека], мягкий свет из окна, глубокие насыщенные тени, тонкая детализация кожи, спокойный уверенный взгляд, вне времени, 4:5." } }
+      ]
+    },
+    {
+      "id": "selfie_style",
+      "name": { "en": "Turn a selfie into…", "ru": "Селфи в стиле…" },
+      "prompts": [
+        { "title": { "en": "3D collectible figurine", "ru": "3D-коллекционная фигурка" },
+          "text": { "en": "Turn the reference photo of [the person] into a highly detailed 3D collectible figurine standing on a round base inside clear blister packaging, glossy toy materials, soft studio lighting, vivid colors, product-shot look. Keep the face recognizable.", "ru": "Преврати фото [человека] в детальную 3D-коллекционную фигурку на круглой подставке в прозрачной блистер-упаковке, глянцевые «игрушечные» материалы, мягкий студийный свет, сочные цвета, как продуктовый кадр. Сохрани узнаваемое лицо." } },
+        { "title": { "en": "Cartoon doodle style", "ru": "Мультяшный дудл" },
+          "text": { "en": "Turn the reference selfie into a playful hand-drawn cartoon doodle, cute bold outlines, flat vibrant colors, simple background with little scribbles, fun and friendly, keep the likeness.", "ru": "Преврати селфи в весёлый рисованный дудл-мультик, милые жирные контуры, плоские сочные цвета, простой фон с мелкими каракулями, дружелюбно и забавно, сохрани сходство." } },
+        { "title": { "en": "Anime character", "ru": "Аниме-персонаж" },
+          "text": { "en": "Convert the reference photo of [the person] into an anime key-visual illustration, clean lineart, vibrant cel shading, expressive eyes, detailed hair, soft rim light, keep the recognizable features.", "ru": "Преврати фото [человека] в аниме key-visual: чистый лайнарт, сочный cel-шейдинг, выразительные глаза, детальные волосы, мягкий контровой свет, сохрани узнаваемые черты." } },
+        { "title": { "en": "Pixar-style character", "ru": "Персонаж в стиле Pixar" },
+          "text": { "en": "Transform the reference person into a charming 3D animated movie character, big warm eyes, soft subsurface skin, cinematic studio lighting, cozy blurred background, high detail, keep the likeness.", "ru": "Преврати человека с фото в обаятельного персонажа 3D-мультфильма, большие тёплые глаза, мягкая кожа с подповерхностным рассеиванием, кинематографичный студийный свет, уютный размытый фон, высокая детализация, сохрани сходство." } },
+        { "title": { "en": "Sticker pack", "ru": "Набор стикеров" },
+          "text": { "en": "Turn the reference face into a cute die-cut sticker character with a thick white border, bold flat colors, simple expression, glossy finish, isolated on a plain background, 1:1.", "ru": "Преврати лицо с фото в милого стикер-персонажа с толстой белой обводкой, яркие плоские цвета, простая эмоция, глянец, на однотонном фоне, 1:1." } },
+        { "title": { "en": "Pop-art comic", "ru": "Поп-арт комикс" },
+          "text": { "en": "Restyle the reference photo as a retro pop-art comic panel, bold ink outlines, halftone dots, punchy primary colors, dramatic expression, speech-bubble-ready composition, keep the likeness.", "ru": "Переосмысли фото как ретро поп-арт комикс, жирные чернильные контуры, полутоновые точки, контрастные основные цвета, драматичная эмоция, место под реплику, сохрани сходство." } },
+        { "title": { "en": "Clay / plasticine", "ru": "Пластилиновый стиль" },
+          "text": { "en": "Turn the reference person into a handmade clay/plasticine character, visible fingerprints and soft imperfections, stop-motion look, warm soft lighting, cozy miniature set, keep the likeness.", "ru": "Преврати человека с фото в пластилинового персонажа ручной лепки, видимые отпечатки пальцев и мягкие неровности, эффект стоп-моушн, тёплый мягкий свет, уютная миниатюрная сцена, сохрани сходство." } },
+        { "title": { "en": "Fantasy hero", "ru": "Фэнтези-герой" },
+          "text": { "en": "Reimagine [the person] from the reference as an epic fantasy hero in detailed armor, cinematic dramatic lighting, atmospheric background, painterly concept-art style, keep the recognizable face.", "ru": "Переосмысли [человека] с фото как эпического фэнтези-героя в детальной броне, кинематографичный драматичный свет, атмосферный фон, живописный стиль концепт-арта, сохрани узнаваемое лицо." } }
+      ]
+    },
+    {
+      "id": "realistic_photo",
+      "name": { "en": "Realistic photo", "ru": "Реалистичное фото" },
+      "prompts": [
+        { "title": { "en": "Candid phone snapshot", "ru": "Случайный кадр с телефона" },
+          "text": { "en": "A candid everyday snapshot of [a person] [doing something], shot on a phone, slightly imperfect framing, natural ambient light, realistic skin texture, authentic unposed moment, mild motion, true-to-life colors.", "ru": "Случайный бытовой кадр [человека], который [что-то делает], снято на телефон, слегка неидеальная композиция, естественный окружающий свет, реалистичная кожа, живой непостановочный момент, лёгкое движение, правдивые цвета." } },
+        { "title": { "en": "Disposable camera flash", "ru": "Плёночная мыльница со вспышкой" },
+          "text": { "en": "A photo of [a person] taken with a cheap disposable film camera, harsh direct flash, slight overexposure, grain, vignetting, red-eye-free, late-90s party aesthetic, raw authentic look.", "ru": "Фото [человека] на дешёвую одноразовую плёночную камеру, жёсткая прямая вспышка, лёгкая пересветка, зерно, виньетка, эстетика вечеринки конца 90-х, сырой аутентичный вид." } },
+        { "title": { "en": "Golden hour street", "ru": "Улица на закате" },
+          "text": { "en": "Realistic street photo of [a person] walking, warm golden-hour backlight, long soft shadows, gentle lens flare, bokeh city background, candid stride, film-like color grade, 3:2.", "ru": "Реалистичное уличное фото [человека] на ходу, тёплый закатный контровой свет, длинные мягкие тени, лёгкий блик, боке города на фоне, живой шаг, плёночная цветокоррекция, 3:2." } },
+        { "title": { "en": "Cozy cafe portrait", "ru": "Портрет в уютном кафе" },
+          "text": { "en": "Warm realistic portrait of [a person] sitting in a cozy cafe by the window, soft daylight, steam rising from a cup, shallow depth of field, gentle bokeh, natural relaxed mood, 4:5.", "ru": "Тёплый реалистичный портрет [человека] в уютном кафе у окна, мягкий дневной свет, пар над чашкой, малая глубина резкости, нежное боке, спокойное настроение, 4:5." } },
+        { "title": { "en": "Mirror selfie", "ru": "Зеркальное селфи" },
+          "text": { "en": "Authentic mirror selfie of [a person] holding a phone, modern interior, natural light, casual outfit, realistic reflection and skin, slightly grainy, everyday social-media aesthetic, 4:5.", "ru": "Аутентичное зеркальное селфи [человека] с телефоном в руке, современный интерьер, естественный свет, повседневный образ, реалистичное отражение и кожа, лёгкое зерно, эстетика соцсетей, 4:5." } },
+        { "title": { "en": "Rainy window mood", "ru": "Дождь за окном" },
+          "text": { "en": "Moody realistic photo of [a person] by a rain-streaked window, soft diffused grey light, droplets in focus foreground, calm reflective expression, cinematic muted colors, 4:5.", "ru": "Атмосферное реалистичное фото [человека] у окна в дождевых каплях, мягкий рассеянный серый свет, капли на переднем плане в фокусе, спокойное задумчивое выражение, приглушённые кинотона, 4:5." } },
+        { "title": { "en": "Outdoor adventure", "ru": "Поход / природа" },
+          "text": { "en": "Realistic outdoor photo of [a person] in [a mountain landscape], crisp natural daylight, wind in the hair, authentic expression, expansive scenery, sharp detail, vivid but natural colors, 3:2.", "ru": "Реалистичное фото [человека] на природе — [горный пейзаж], чистый дневной свет, ветер в волосах, живое выражение, простор, резкая детализация, сочные но натуральные цвета, 3:2." } },
+        { "title": { "en": "Night neon street", "ru": "Ночная неоновая улица" },
+          "text": { "en": "Realistic night portrait of [a person] on a neon-lit street, colorful reflections, shallow depth of field, soft bokeh lights, cinematic low-light grain, moody atmosphere, 4:5.", "ru": "Реалистичный ночной портрет [человека] на неоновой улице, цветные отражения, малая глубина резкости, мягкое боке огней, кинематографичное зерно, атмосферно, 4:5." } }
       ]
     },
     {
       "id": "product",
-      "name": { "en": "Product & e-commerce", "ru": "Товар и маркетплейс" },
+      "name": { "en": "Product & ads", "ru": "Товар и реклама" },
       "prompts": [
-        { "title": { "en": "Clean studio pack-shot", "ru": "Студийный пэкшот" }, "text": "professional product photography on a seamless white background, soft diffused softbox lighting, gentle reflection, crisp focus, subtle shadow, high detail, clean commercial e-commerce look" },
-        { "title": { "en": "Cosmetics on stone", "ru": "Косметика на камне" }, "text": "luxury cosmetic bottle on a textured stone slab, moody soft light, water droplets, shallow depth of field, premium advertising still life, warm highlights" },
-        { "title": { "en": "Floating splash", "ru": "Всплеск/левитация" }, "text": "dynamic product shot with the item floating, dramatic splash of liquid frozen in motion, high-speed photography, dark gradient background, sharp specular highlights" },
-        { "title": { "en": "Lifestyle flat lay", "ru": "Флэт-лей" }, "text": "top-down flat lay of a product surrounded by complementary props, soft natural window light, balanced composition, muted pastel palette, lifestyle mood" }
+        { "title": { "en": "Clean pack-shot", "ru": "Чистый пэкшот" },
+          "text": { "en": "Professional product photo of [the product] on a seamless white background, soft diffused softbox light, gentle reflection, subtle shadow, crisp focus, high detail, clean commercial e-commerce look, 1:1.", "ru": "Профессиональное фото [товара] на бесшовном белом фоне, мягкий рассеянный свет софтбокса, аккуратное отражение, лёгкая тень, резкий фокус, высокая детализация, чистый коммерческий вид для маркетплейса, 1:1." } },
+        { "title": { "en": "Hero ad with text", "ru": "Рекламный постер с текстом" },
+          "text": { "en": "Premium advertising poster for [the product], dramatic studio lighting on a [dark gradient] background, product centered, bold headline text \"[YOUR SLOGAN]\" at the top, clean modern layout, space for logo, 4:5.", "ru": "Премиальный рекламный постер [товара], драматичный студийный свет на [тёмном градиентном] фоне, товар по центру, крупный заголовок «[ВАШ СЛОГАН]» сверху, чистая современная вёрстка, место под логотип, 4:5." } },
+        { "title": { "en": "Splash / dynamic", "ru": "Динамика и брызги" },
+          "text": { "en": "Dynamic product shot of [the product] with a dramatic splash of liquid frozen in motion, high-speed photography, dark moody background, sharp specular highlights, energetic, 4:5.", "ru": "Динамичный кадр [товара] с эффектным всплеском жидкости, застывшим в движении, высокоскоростная съёмка, тёмный атмосферный фон, резкие блики, энергично, 4:5." } },
+        { "title": { "en": "Lifestyle flat lay", "ru": "Флэт-лей / раскладка" },
+          "text": { "en": "Top-down flat lay of [the product] surrounded by complementary props, soft natural window light, balanced composition, muted pastel palette, lifestyle mood, 1:1.", "ru": "Раскладка [товара] сверху в окружении подходящих предметов, мягкий дневной свет из окна, сбалансированная композиция, приглушённая пастельная палитра, лайфстайл, 1:1." } },
+        { "title": { "en": "Held in hand", "ru": "В руке" },
+          "text": { "en": "Close-up of a hand holding [the product], soft natural light, blurred real-world background, realistic skin and material detail, relatable scale, shallow depth of field, 4:5.", "ru": "Крупный план: рука держит [товар], мягкий естественный свет, размытый реальный фон, реалистичная кожа и материалы, понятный масштаб, малая глубина резкости, 4:5." } },
+        { "title": { "en": "On natural stone", "ru": "На камне" },
+          "text": { "en": "Luxury still life of [the product] on a textured stone slab, moody soft side light, water droplets, premium advertising mood, warm highlights, shallow depth of field, 4:5.", "ru": "Люксовый натюрморт [товара] на фактурной каменной плите, мягкий боковой свет, капли воды, премиальное рекламное настроение, тёплые блики, малая глубина резкости, 4:5." } },
+        { "title": { "en": "Exploded view diagram", "ru": "Взрыв-схема" },
+          "text": { "en": "Exploded-view product diagram poster of [the product], parts floating apart in order, clean high-tech 3D render, studio lighting, soft [blue] gradient background, thin label lines, modern infographic style, 4:5.", "ru": "Постер-схема [товара] во «взрыв-виде», детали разнесены по порядку, чистый хай-тек 3D-рендер, студийный свет, мягкий [синий] градиент, тонкие линии-выноски, современная инфографика, 4:5." } },
+        { "title": { "en": "Social promo square", "ru": "Промо-квадрат для соцсетей" },
+          "text": { "en": "Eye-catching social media promo for [the product], vibrant background, product hero shot, short punchy text \"[OFFER]\", playful modern design, balanced negative space, 1:1.", "ru": "Цепляющее промо [товара] для соцсетей, яркий фон, эффектный кадр товара, короткий хлёсткий текст «[ОФФЕР]», игривый современный дизайн, сбалансированное пространство, 1:1." } }
       ]
     },
     {
-      "id": "cinematic",
-      "name": { "en": "Cinematic", "ru": "Кинематограф" },
+      "id": "food",
+      "name": { "en": "Food & drinks", "ru": "Еда и напитки" },
       "prompts": [
-        { "title": { "en": "Neo-noir street", "ru": "Нуар-улица" }, "text": "cinematic film still, rain-slicked neon city street at night, teal-and-orange color grade, anamorphic lens flares, volumetric fog, shallow depth of field, widescreen composition" },
-        { "title": { "en": "Epic landscape", "ru": "Эпичный пейзаж" }, "text": "cinematic wide shot of a vast mountain valley at dawn, god rays through mist, lone figure for scale, dramatic clouds, film grain, color graded, IMAX feel" },
-        { "title": { "en": "Sci-fi corridor", "ru": "Sci-fi коридор" }, "text": "cinematic sci-fi spaceship corridor, cold blue practical lighting, atmospheric haze, reflective floor, intricate panel detail, shallow depth of field, blockbuster look" },
-        { "title": { "en": "Cozy interior", "ru": "Уютный интерьер" }, "text": "cinematic cozy cafe interior, warm tungsten light, soft window glow, steam rising from a cup, bokeh background, inviting mood, natural color grade" }
+        { "title": { "en": "Hero close-up", "ru": "Крупный план блюда" },
+          "text": { "en": "Mouth-watering close-up of [a dish], fresh steam rising, glossy textures, shallow depth of field, soft natural side light, rustic table, vivid appetizing colors, food-magazine quality, 1:1.", "ru": "Аппетитный крупный план [блюда], свежий пар, глянцевые текстуры, малая глубина резкости, мягкий боковой дневной свет, деревенский стол, сочные аппетитные цвета, качество кулинарного журнала, 1:1." } },
+        { "title": { "en": "Top-down spread", "ru": "Стол сверху" },
+          "text": { "en": "Top-down flat lay of [a meal] with side dishes and ingredients arranged neatly, soft daylight, balanced composition, warm wooden surface, appetizing and clean, 1:1.", "ru": "Раскладка [блюда] сверху с гарнирами и ингредиентами, аккуратно разложено, мягкий дневной свет, сбалансированная композиция, тёплая деревянная поверхность, аппетитно и чисто, 1:1." } },
+        { "title": { "en": "Drink with condensation", "ru": "Напиток с конденсатом" },
+          "text": { "en": "Refreshing [a cold drink] in a glass with ice and condensation droplets, bright backlight making it glow, splashing motion, clean background, crisp and vibrant, 4:5.", "ru": "Освежающий [холодный напиток] в стакане со льдом и каплями конденсата, яркий контровой свет, эффект свечения, всплеск, чистый фон, чётко и сочно, 4:5." } },
+        { "title": { "en": "Cozy restaurant scene", "ru": "Атмосфера ресторана" },
+          "text": { "en": "[A dish] served on a table in a cozy restaurant, warm ambient light, soft bokeh background, shallow depth of field, inviting mood, realistic, 3:2.", "ru": "[Блюдо] на столе в уютном ресторане, тёплый окружающий свет, мягкое боке на фоне, малая глубина резкости, располагающее настроение, реалистично, 3:2." } },
+        { "title": { "en": "Minimal studio food", "ru": "Минимал-фуд-кадр" },
+          "text": { "en": "Minimal studio shot of [a food item] on a solid pastel background, soft even light, subtle shadow, centered, clean modern food advertising, 1:1.", "ru": "Минималистичный студийный кадр [продукта] на однотонном пастельном фоне, мягкий ровный свет, лёгкая тень, по центру, чистая современная фуд-реклама, 1:1." } },
+        { "title": { "en": "Ingredients in motion", "ru": "Ингредиенты в полёте" },
+          "text": { "en": "[A dish] with fresh ingredients flying and splashing around it, frozen in mid-air, dynamic high-speed look, dramatic light, dark background, energetic appetizing, 1:1.", "ru": "[Блюдо] с летящими и разлетающимися вокруг свежими ингредиентами, застывшими в воздухе, динамичный высокоскоростной вид, драматичный свет, тёмный фон, энергично и аппетитно, 1:1." } },
+        { "title": { "en": "Bakery warmth", "ru": "Тёплая пекарня" },
+          "text": { "en": "Freshly baked [pastry] on parchment, warm golden light, soft flour dust in the air, crispy detailed crust, cozy bakery mood, shallow depth of field, 4:5.", "ru": "Свежая [выпечка] на пергаменте, тёплый золотистый свет, лёгкая мучная пыль в воздухе, хрустящая детальная корочка, уютная атмосфера пекарни, малая глубина резкости, 4:5." } },
+        { "title": { "en": "Menu card shot", "ru": "Кадр для меню" },
+          "text": { "en": "Clean appetizing photo of [a dish] for a menu, neutral background, even soft lighting, accurate colors, sharp focus on the food, professional and simple, 1:1.", "ru": "Чистое аппетитное фото [блюда] для меню, нейтральный фон, ровный мягкий свет, точные цвета, резкий фокус на еде, профессионально и просто, 1:1." } }
       ]
     },
     {
-      "id": "render3d",
-      "name": { "en": "3D & render", "ru": "3D и рендер" },
+      "id": "infographic",
+      "name": { "en": "Infographics & slides", "ru": "Инфографика и слайды" },
       "prompts": [
-        { "title": { "en": "Clay character", "ru": "Глиняный персонаж" }, "text": "cute stylized 3D character, clay/plasticine look, soft global illumination, studio HDRI lighting, subsurface scattering, octane render, ultra detail, pastel palette" },
-        { "title": { "en": "Glass & chrome", "ru": "Стекло и хром" }, "text": "abstract 3D composition of glass and chrome shapes, ray-traced reflections and refraction, iridescent material, soft gradient background, premium render, 8k" },
-        { "title": { "en": "Isometric room", "ru": "Изометрическая комната" }, "text": "isometric 3D miniature room, physically based materials, soft shadows, warm cozy lighting, intricate props, tilt-shift, clean render" },
-        { "title": { "en": "Product render", "ru": "Рендер продукта" }, "text": "photorealistic 3D product render, studio lighting, accurate materials, subtle reflections on a glossy floor, crisp edges, advertising quality, high detail" }
+        { "title": { "en": "Explainer slide", "ru": "Слайд-объяснение" },
+          "text": { "en": "A clean explainer infographic slide about \"[your topic]\", clear title, 3-4 labeled sections with simple icons and short captions, flat modern design, harmonious palette, legible text, 16:9.", "ru": "Чистый слайд-инфографика на тему «[ваша тема]», понятный заголовок, 3–4 блока с простыми иконками и короткими подписями, плоский современный дизайн, гармоничная палитра, читаемый текст, 16:9." } },
+        { "title": { "en": "Timeline poster", "ru": "Постер-таймлайн" },
+          "text": { "en": "An illustrated horizontal timeline of \"[topic / process]\", left-to-right milestones with small icons, dates and short labels, clean infographic style, soft colors, clear typography, 16:9.", "ru": "Иллюстрированный горизонтальный таймлайн «[тема/процесс]», вехи слева направо с иконками, датами и короткими подписями, чистая инфографика, мягкие цвета, понятная типографика, 16:9." } },
+        { "title": { "en": "Step-by-step guide", "ru": "Пошаговый гайд" },
+          "text": { "en": "A numbered step-by-step how-to infographic for \"[task]\", 4-6 steps with simple illustrations and concise text, friendly flat style, consistent icons, easy to read, vertical 4:5.", "ru": "Пронумерованная пошаговая инфографика «как сделать [задача]», 4–6 шагов с простыми иллюстрациями и кратким текстом, дружелюбный плоский стиль, единые иконки, легко читать, вертикаль 4:5." } },
+        { "title": { "en": "Comparison chart", "ru": "Сравнение / таблица" },
+          "text": { "en": "A clean comparison infographic of \"[A vs B]\", two columns with icons, checkmarks and short bullet points, balanced layout, modern flat design, clear legible labels, 1:1.", "ru": "Чистая инфографика-сравнение «[A против B]», две колонки с иконками, галочками и короткими пунктами, сбалансированная вёрстка, современный плоский дизайн, читаемые подписи, 1:1." } },
+        { "title": { "en": "Stat card", "ru": "Карточка со статистикой" },
+          "text": { "en": "A bold single-stat social card highlighting \"[key number]\", large clear figure, short supporting caption, simple icon, vibrant accent color, minimal modern design, 1:1.", "ru": "Яркая карточка с одной цифрой «[ключевое число]», крупная чёткая цифра, короткая подпись, простая иконка, сочный акцентный цвет, минималистичный современный дизайн, 1:1." } },
+        { "title": { "en": "Mind map", "ru": "Майнд-карта" },
+          "text": { "en": "A tidy mind map diagram about \"[central idea]\", a central node with branching sub-topics, simple icons, soft color coding, clean lines, organized and legible, 16:9.", "ru": "Аккуратная майнд-карта по теме «[главная идея]», центральный узел с ветвящимися подтемами, простые иконки, мягкое цветовое кодирование, чистые линии, упорядоченно и читаемо, 16:9." } },
+        { "title": { "en": "3D isometric infographic", "ru": "3D-изометрическая инфографика" },
+          "text": { "en": "A modern isometric 3D infographic about \"[topic]\", small 3D scenes with labels, soft shadows, clean palette, depth and polish, organized layout, legible text, 16:9.", "ru": "Современная изометрическая 3D-инфографика по теме «[тема]», маленькие 3D-сцены с подписями, мягкие тени, чистая палитра, объём и аккуратность, упорядоченная вёрстка, читаемый текст, 16:9." } },
+        { "title": { "en": "Recipe card", "ru": "Карточка рецепта" },
+          "text": { "en": "A clean recipe infographic for \"[dish]\", ingredient icons with amounts on one side, numbered steps on the other, warm friendly style, appetizing accent colors, legible, 4:5.", "ru": "Чистая инфографика-рецепт «[блюдо]», иконки ингредиентов с количеством с одной стороны, пронумерованные шаги с другой, тёплый дружелюбный стиль, аппетитные акценты, читаемо, 4:5." } }
+      ]
+    },
+    {
+      "id": "covers",
+      "name": { "en": "Covers & thumbnails", "ru": "Обложки и превью" },
+      "prompts": [
+        { "title": { "en": "YouTube thumbnail", "ru": "Превью для YouTube" },
+          "text": { "en": "A high-CTR YouTube thumbnail about \"[topic]\", expressive [person] face on one side, bold short text \"[3 WORDS]\", strong contrast, bright saturated colors, clear focal point, 16:9.", "ru": "Кликабельное превью YouTube на тему «[тема]», выразительное лицо [человека] сбоку, крупный короткий текст «[3 СЛОВА]», сильный контраст, яркие насыщенные цвета, явный фокус, 16:9." } },
+        { "title": { "en": "Magazine cover", "ru": "Обложка журнала" },
+          "text": { "en": "High-end minimalist fashion magazine cover portrait of [a person], studio editorial lighting, cool neutral background, refined muted contrast, masthead \"[TITLE]\" and small cover lines, elegant typography, 3:4.", "ru": "Премиальная минималистичная обложка фэшн-журнала с портретом [человека], студийный эдиториал-свет, прохладный нейтральный фон, утончённый приглушённый контраст, шапка «[НАЗВАНИЕ]» и мелкие подзаголовки, элегантная типографика, 3:4." } },
+        { "title": { "en": "Podcast cover", "ru": "Обложка подкаста" },
+          "text": { "en": "A bold square podcast cover for \"[show name]\", strong central graphic or portrait, clear title text, modern confident style, memorable color scheme, crisp at small sizes, 1:1.", "ru": "Смелая квадратная обложка подкаста «[название]», сильный центральный графический элемент или портрет, чёткий заголовок, современный уверенный стиль, запоминающаяся палитра, читаемо в малом размере, 1:1." } },
+        { "title": { "en": "Event poster", "ru": "Афиша мероприятия" },
+          "text": { "en": "An eye-catching event poster for \"[event]\", striking central visual, large title, date and place text, dynamic modern layout, vibrant palette, balanced hierarchy, 4:5.", "ru": "Яркая афиша мероприятия «[событие]», эффектный центральный визуал, крупный заголовок, текст с датой и местом, динамичная современная вёрстка, сочная палитра, понятная иерархия, 4:5." } },
+        { "title": { "en": "Quote card", "ru": "Карточка с цитатой" },
+          "text": { "en": "An elegant social quote card with the text \"[your quote]\", refined typography as the hero, soft gradient or textured background, generous spacing, calm premium mood, 1:1.", "ru": "Элегантная карточка с цитатой «[ваша цитата]», утончённая типографика как главный элемент, мягкий градиент или фактурный фон, много воздуха, спокойное премиальное настроение, 1:1." } },
+        { "title": { "en": "Sale banner", "ru": "Баннер распродажи" },
+          "text": { "en": "A high-energy sale banner, big bold \"[-50%]\" headline, product or theme visual, bright contrasting colors, clear call-to-action button, clean modern design, 16:9.", "ru": "Энергичный баннер распродажи, крупный жирный заголовок «[-50%]», визуал товара или темы, яркие контрастные цвета, заметная кнопка-призыв, чистый современный дизайн, 16:9." } },
+        { "title": { "en": "Article cover (X/blog)", "ru": "Обложка статьи (X/блог)" },
+          "text": { "en": "A clean blog/X article cover about \"[topic]\", clear concise title text, simple supporting illustration or icon, tidy modern layout, readable, professional, 16:9.", "ru": "Чистая обложка статьи для блога/X на тему «[тема]», понятный краткий заголовок, простая поясняющая иллюстрация или иконка, аккуратная современная вёрстка, читаемо, профессионально, 16:9." } }
       ]
     },
     {
       "id": "illustration",
-      "name": { "en": "Illustration & anime", "ru": "Иллюстрация и аниме" },
+      "name": { "en": "Illustration & art", "ru": "Иллюстрация и арт" },
       "prompts": [
-        { "title": { "en": "Anime key visual", "ru": "Аниме key visual" }, "text": "anime key visual, clean confident lineart, vibrant cel shading, expressive eyes, detailed background art, soft rim lighting, studio-quality illustration" },
-        { "title": { "en": "Watercolor scene", "ru": "Акварельная сцена" }, "text": "watercolor illustration, soft translucent washes, wet-on-wet bleeding edges, visible paper texture, delicate palette, airy negative space, hand-painted" },
-        { "title": { "en": "Flat vector", "ru": "Плоский вектор" }, "text": "flat vector illustration, bold geometric shapes, clean crisp edges, limited harmonious palette, minimal design, subtle long shadows, balanced composition" },
-        { "title": { "en": "Storybook art", "ru": "Книжная иллюстрация" }, "text": "whimsical children's storybook illustration, warm gouache textures, soft rounded shapes, cozy lighting, charming characters, gentle color palette" }
+        { "title": { "en": "Anime scene", "ru": "Аниме-сцена" },
+          "text": { "en": "Anime illustration of [a scene], clean confident lineart, vibrant cel shading, detailed background art, dramatic lighting, expressive characters, studio key-visual quality, 16:9.", "ru": "Аниме-иллюстрация [сцены], чистый уверенный лайнарт, сочный cel-шейдинг, детально прорисованный фон, драматичный свет, выразительные персонажи, качество студийного key-visual, 16:9." } },
+        { "title": { "en": "Watercolor landscape", "ru": "Акварельный пейзаж" },
+          "text": { "en": "Soft watercolor illustration of [a landscape], translucent washes, wet-on-wet bleeding, visible paper texture, gentle palette, airy and serene, hand-painted, 3:2.", "ru": "Мягкая акварельная иллюстрация [пейзажа], полупрозрачные заливки, растекания по-мокрому, видимая фактура бумаги, нежная палитра, воздушно и спокойно, ручная работа, 3:2." } },
+        { "title": { "en": "Flat vector scene", "ru": "Плоская векторная сцена" },
+          "text": { "en": "Flat vector illustration of [a scene], bold geometric shapes, clean edges, limited harmonious palette, subtle long shadows, minimal modern design, balanced composition, 16:9.", "ru": "Плоская векторная иллюстрация [сцены], смелые геометрические формы, чистые края, ограниченная гармоничная палитра, аккуратные длинные тени, минималистичный современный дизайн, 16:9." } },
+        { "title": { "en": "Storybook art", "ru": "Книжная иллюстрация" },
+          "text": { "en": "Whimsical children's storybook illustration of [a scene], warm gouache textures, soft rounded shapes, cozy lighting, charming characters, gentle palette, 4:3.", "ru": "Сказочная детская книжная иллюстрация [сцены], тёплые текстуры гуаши, мягкие округлые формы, уютный свет, обаятельные персонажи, нежная палитра, 4:3." } },
+        { "title": { "en": "Concept art", "ru": "Концепт-арт" },
+          "text": { "en": "Cinematic concept art of [a place/character], painterly detail, dramatic atmospheric lighting, epic sense of scale, rich mood, professional digital painting, 16:9.", "ru": "Кинематографичный концепт-арт [места/персонажа], живописная детализация, драматичный атмосферный свет, эпический масштаб, насыщенное настроение, профессиональная цифровая живопись, 16:9." } },
+        { "title": { "en": "Pixel art", "ru": "Пиксель-арт" },
+          "text": { "en": "16-bit pixel art of [a scene], crisp clean pixels, limited retro palette, careful dithering, nostalgic game style, no anti-aliasing, charming detail, 1:1.", "ru": "Пиксель-арт 16-бит [сцены], чёткие аккуратные пиксели, ограниченная ретро-палитра, аккуратный дизеринг, ностальгический игровой стиль, без сглаживания, милая детализация, 1:1." } },
+        { "title": { "en": "Ink / line art", "ru": "Тушь / графика" },
+          "text": { "en": "Detailed black ink illustration of [a subject], fine cross-hatching, confident linework, high contrast, hand-drawn texture, monochrome, elegant, 1:1.", "ru": "Детальная иллюстрация чёрной тушью [объекта], тонкая штриховка крест-накрест, уверенные линии, высокий контраст, ручная фактура, монохром, элегантно, 1:1." } },
+        { "title": { "en": "Chibi character", "ru": "Чиби-персонаж" },
+          "text": { "en": "Cute chibi-style illustration of [a character], oversized head, tiny body, big sparkly eyes, soft pastel colors, simple background, adorable and clean, 1:1.", "ru": "Милая иллюстрация в стиле чиби [персонажа], большая голова, маленькое тело, большие блестящие глаза, мягкие пастельные цвета, простой фон, очаровательно и чисто, 1:1." } }
+      ]
+    },
+    {
+      "id": "interior",
+      "name": { "en": "Interior & real estate", "ru": "Интерьер и недвижимость" },
+      "prompts": [
+        { "title": { "en": "Cozy living room", "ru": "Уютная гостиная" },
+          "text": { "en": "Photorealistic interior of a cozy modern living room, warm natural daylight from large windows, soft textures, balanced styling, wide angle, magazine-quality architectural photography, 3:2.", "ru": "Фотореалистичный интерьер уютной современной гостиной, тёплый дневной свет из больших окон, мягкие фактуры, аккуратная стилизация, широкий угол, архитектурная съёмка журнального качества, 3:2." } },
+        { "title": { "en": "Scandinavian kitchen", "ru": "Скандинавская кухня" },
+          "text": { "en": "Bright Scandinavian kitchen interior, light wood and white tones, minimal clean styling, soft daylight, natural materials, airy and tidy, realistic architectural shot, 3:2.", "ru": "Светлая кухня в скандинавском стиле, светлое дерево и белые тона, минимализм, мягкий дневной свет, натуральные материалы, воздушно и аккуратно, реалистичная архитектурная съёмка, 3:2." } },
+        { "title": { "en": "Luxury bedroom", "ru": "Люксовая спальня" },
+          "text": { "en": "Elegant luxury bedroom interior, soft layered lighting, premium textures, neutral warm palette, refined décor, inviting and serene, realistic, wide angle, 3:2.", "ru": "Элегантная люксовая спальня, мягкий многослойный свет, премиальные фактуры, нейтральная тёплая палитра, изысканный декор, уютно и спокойно, реалистично, широкий угол, 3:2." } },
+        { "title": { "en": "Modern office space", "ru": "Современный офис" },
+          "text": { "en": "Modern open-plan office interior, clean design, plants, natural light, ergonomic furniture, bright productive atmosphere, realistic architectural photography, 3:2.", "ru": "Современный офис открытой планировки, чистый дизайн, растения, естественный свет, эргономичная мебель, светлая продуктивная атмосфера, реалистичная архитектурная съёмка, 3:2." } },
+        { "title": { "en": "Exterior facade", "ru": "Фасад дома" },
+          "text": { "en": "Photorealistic exterior of a modern house at golden hour, warm light, clean architectural lines, landscaped garden, blue sky, real-estate listing quality, 3:2.", "ru": "Фотореалистичный экстерьер современного дома на закате, тёплый свет, чистые архитектурные линии, ландшафтный сад, голубое небо, качество объявления о недвижимости, 3:2." } },
+        { "title": { "en": "Empty room staging", "ru": "Виртуальная меблировка" },
+          "text": { "en": "Tastefully furnished version of [an empty room from reference], realistic furniture and décor matching the space and lighting, natural shadows, clean home-staging look, keep the room's architecture, 3:2.", "ru": "Со вкусом меблированная версия [пустой комнаты с референса], реалистичная мебель и декор под пространство и свет, естественные тени, аккуратный home-staging, сохрани архитектуру комнаты, 3:2." } },
+        { "title": { "en": "Reading nook", "ru": "Уголок для чтения" },
+          "text": { "en": "Cozy reading nook by a window, soft warm lamp light, a comfy armchair, bookshelf, plants, calm inviting mood, realistic interior detail, 4:5.", "ru": "Уютный уголок для чтения у окна, мягкий тёплый свет лампы, удобное кресло, книжная полка, растения, спокойное располагающее настроение, реалистичная детализация интерьера, 4:5." } }
       ]
     },
     {
       "id": "logo",
       "name": { "en": "Logo & graphics", "ru": "Логотип и графика" },
       "prompts": [
-        { "title": { "en": "Minimal mark", "ru": "Минимал-знак" }, "text": "minimal vector logo, clean geometric mark, simple memorable shape, flat solid colors, balanced negative space, scalable, crisp edges, plain background" },
-        { "title": { "en": "Mascot logo", "ru": "Маскот-логотип" }, "text": "friendly mascot logo, bold clean lineart, vibrant flat colors, rounded shapes, expressive and memorable, vector style, white background" },
-        { "title": { "en": "Emblem badge", "ru": "Эмблема-бейдж" }, "text": "vintage emblem badge logo, circular layout, refined typography, symmetrical, two-color print look, crisp lines, premium craft feel" }
+        { "title": { "en": "Minimal logo mark", "ru": "Минимал-логотип" },
+          "text": { "en": "Minimal vector logo for \"[brand]\", clean geometric mark symbolizing [idea], simple memorable shape, flat solid colors, balanced negative space, scalable, plain background, 1:1.", "ru": "Минималистичный векторный логотип «[бренд]», чистый геометрический знак, символизирующий [идея], простая запоминающаяся форма, плоские сплошные цвета, сбалансированное пространство, масштабируемость, однотонный фон, 1:1." } },
+        { "title": { "en": "Mascot logo", "ru": "Маскот-логотип" },
+          "text": { "en": "Friendly mascot logo of [a character] for \"[brand]\", bold clean lineart, vibrant flat colors, rounded shapes, expressive and memorable, vector style, white background, 1:1.", "ru": "Дружелюбный маскот-логотип [персонаж] для «[бренд]», жирный чистый лайнарт, сочные плоские цвета, округлые формы, выразительно и запоминаемо, векторный стиль, белый фон, 1:1." } },
+        { "title": { "en": "Vintage emblem", "ru": "Винтажная эмблема" },
+          "text": { "en": "Vintage emblem badge logo for \"[brand]\", circular layout, refined typography, symmetrical, two-color print look, crisp lines, premium craft feel, 1:1.", "ru": "Винтажная эмблема-бейдж для «[бренд]», круговая компоновка, утончённая типографика, симметрия, двухцветная печать, чёткие линии, премиальное крафтовое ощущение, 1:1." } },
+        { "title": { "en": "App icon", "ru": "Иконка приложения" },
+          "text": { "en": "A modern app icon for \"[app]\", simple bold symbol, smooth gradient, soft depth, rounded-square format, crisp and recognizable at small sizes, clean background, 1:1.", "ru": "Современная иконка приложения «[приложение]», простой смелый символ, плавный градиент, мягкий объём, формат скруглённого квадрата, чёткая и узнаваемая в малом размере, чистый фон, 1:1." } },
+        { "title": { "en": "Lettermark / monogram", "ru": "Монограмма" },
+          "text": { "en": "Elegant lettermark monogram for the initials \"[XY]\", refined custom typography, balanced geometry, single accent color, timeless and premium, plain background, 1:1.", "ru": "Элегантная монограмма из инициалов «[XY]», утончённая кастомная типографика, сбалансированная геометрия, один акцентный цвет, вне времени и премиально, однотонный фон, 1:1." } },
+        { "title": { "en": "Sticker / emoji", "ru": "Стикер / эмодзи" },
+          "text": { "en": "A cute die-cut sticker of [a subject], thick white border, bold flat colors, simple cheerful expression, glossy finish, isolated on plain background, 1:1.", "ru": "Милый стикер [объекта], толстая белая обводка, яркие плоские цвета, простая весёлая эмоция, глянец, на однотонном фоне, 1:1." } },
+        { "title": { "en": "Pattern / texture", "ru": "Паттерн / текстура" },
+          "text": { "en": "A seamless repeating pattern of [motif], balanced spacing, harmonious palette, flat modern style, suitable for packaging or backgrounds, clean, tileable, 1:1.", "ru": "Бесшовный повторяющийся паттерн из [мотив], сбалансированные отступы, гармоничная палитра, плоский современный стиль, для упаковки или фонов, чисто, тайлится, 1:1." } }
       ]
     },
     {
-      "id": "video",
-      "name": { "en": "Video prompts", "ru": "Промпты для видео" },
+      "id": "v_product",
+      "name": { "en": "Video: product ads", "ru": "Видео: реклама товара" },
       "target": "video",
       "prompts": [
-        { "title": { "en": "Slow cinematic push-in", "ru": "Кино-наезд" }, "text": "cinematic slow push-in toward the subject, shallow depth of field, soft volumetric light, gentle atmospheric particles, smooth steady camera motion, film grain" },
-        { "title": { "en": "Product 360 spin", "ru": "Оборот товара 360" }, "text": "product slowly rotating 360 degrees on a turntable, studio lighting, seamless background, soft reflections, smooth continuous motion, crisp focus" },
-        { "title": { "en": "Drone reveal", "ru": "Облёт дроном" }, "text": "aerial drone shot rising and revealing a vast landscape at sunrise, smooth ascending camera move, golden light, dramatic clouds, cinematic scale" },
-        { "title": { "en": "Hair/fabric in wind", "ru": "Волосы/ткань на ветру" }, "text": "close-up of hair and fabric flowing gently in the wind, soft slow motion, backlit by warm sun, delicate movement, shallow depth of field" }
+        { "title": { "en": "Cinematic product ad", "ru": "Кинореклама товара" },
+          "text": { "en": "Cinematic commercial of [the product], slow elegant camera orbit, dramatic studio lighting, soft reflections, shallow depth of field, premium mood, subtle particles in the air, smooth motion, 16:9.", "ru": "Кинематографичная реклама [товара], медленный элегантный облёт камерой, драматичный студийный свет, мягкие отражения, малая глубина резкости, премиальное настроение, лёгкие частицы в воздухе, плавное движение, 16:9." } },
+        { "title": { "en": "360 turntable", "ru": "Оборот 360" },
+          "text": { "en": "[The product] slowly rotating 360 degrees on a turntable, seamless studio background, soft reflections, even lighting, smooth continuous motion, crisp focus, clean commercial look, 1:1.", "ru": "[Товар] медленно вращается на 360° на поворотном столе, бесшовный студийный фон, мягкие отражения, ровный свет, плавное непрерывное движение, резкий фокус, чистый коммерческий вид, 1:1." } },
+        { "title": { "en": "Splash reveal", "ru": "Эффектный всплеск" },
+          "text": { "en": "Dynamic reveal of [the product] as a splash of liquid swirls around it in slow motion, dramatic backlight, dark background, sparkling droplets, energetic premium feel, smooth slow-mo, 16:9.", "ru": "Динамичное появление [товара]: вокруг в слоумоушн закручивается всплеск жидкости, драматичный контровой свет, тёмный фон, искрящиеся капли, энергично и премиально, плавный слоу-мо, 16:9." } },
+        { "title": { "en": "Lifestyle in use", "ru": "В использовании / лайфстайл" },
+          "text": { "en": "Warm lifestyle clip of [a person] using [the product] in a bright cozy setting, natural light, gentle handheld camera, authentic happy moment, soft bokeh, realistic, 9:16.", "ru": "Тёплый лайфстайл-ролик: [человек] пользуется [товаром] в светлом уютном пространстве, естественный свет, лёгкая съёмка с рук, искренний радостный момент, мягкое боке, реалистично, 9:16." } },
+        { "title": { "en": "Unboxing macro", "ru": "Макро-распаковка" },
+          "text": { "en": "Macro slow-motion unboxing of [the product], hands opening premium packaging, soft directional light, crisp texture detail, satisfying reveal, shallow depth of field, smooth motion, 16:9.", "ru": "Макро-распаковка [товара] в слоумоушн, руки открывают премиальную упаковку, мягкий направленный свет, чёткая фактура, приятное появление, малая глубина резкости, плавное движение, 16:9." } },
+        { "title": { "en": "Floating hero loop", "ru": "Левитация (зацикл)" },
+          "text": { "en": "[The product] floating and gently rotating in the center, minimal gradient background, soft glowing light, subtle drifting particles, seamless loop, clean modern motion, 1:1.", "ru": "[Товар] парит и плавно вращается по центру, минималистичный градиентный фон, мягкое свечение, лёгкие летящие частицы, бесшовный зацикл, чистое современное движение, 1:1." } }
+      ]
+    },
+    {
+      "id": "v_cinematic",
+      "name": { "en": "Video: cinematic", "ru": "Видео: кинокадр" },
+      "target": "video",
+      "prompts": [
+        { "title": { "en": "Slow push-in", "ru": "Медленный наезд" },
+          "text": { "en": "Cinematic slow push-in toward [the subject], shallow depth of field, soft volumetric light, gentle atmospheric particles, steady smooth camera, film grain, moody color grade, 16:9.", "ru": "Кинематографичный медленный наезд на [субъект], малая глубина резкости, мягкий объёмный свет, лёгкие частицы в воздухе, ровная плавная камера, плёночное зерно, атмосферная цветокоррекция, 16:9." } },
+        { "title": { "en": "Golden hour reveal", "ru": "Раскрытие на закате" },
+          "text": { "en": "Cinematic shot of [a scene] at golden hour, warm backlight, long shadows, slow gentle camera move revealing the scene, lens flare, dreamy mood, smooth motion, 16:9.", "ru": "Кинокадр [сцены] на закате, тёплый контровой свет, длинные тени, медленное плавное движение камеры, раскрывающее сцену, блик, мечтательное настроение, плавно, 16:9." } },
+        { "title": { "en": "Rainy neon street", "ru": "Дождливая неоновая улица" },
+          "text": { "en": "Cinematic shot of [a subject] on a rain-slicked neon street at night, reflections, volumetric fog, teal-and-orange grade, slow tracking camera, atmospheric, smooth motion, 16:9.", "ru": "Кинокадр [субъект] на мокрой неоновой улице ночью, отражения, объёмный туман, грейд teal & orange, медленное слежение камерой, атмосферно, плавное движение, 16:9." } },
+        { "title": { "en": "Aerial drone reveal", "ru": "Облёт дроном" },
+          "text": { "en": "Aerial drone shot rising and revealing [a landscape] at sunrise, smooth ascending move, dramatic clouds, golden light, epic cinematic scale, 16:9.", "ru": "Съёмка дроном: подъём и раскрытие [пейзаж] на рассвете, плавное восходящее движение, драматичные облака, золотой свет, эпический кинематографичный масштаб, 16:9." } },
+        { "title": { "en": "Macro detail", "ru": "Макро-деталь" },
+          "text": { "en": "Extreme macro cinematic shot of [a subject], slow drifting camera, soft shallow focus, beautiful light, fine texture detail, calm ASMR mood, smooth motion, 16:9.", "ru": "Экстремально-макро кинокадр [субъект], медленный дрейф камеры, мягкий неглубокий фокус, красивый свет, тонкая фактура, спокойное ASMR-настроение, плавно, 16:9." } },
+        { "title": { "en": "Character moment", "ru": "Момент с героем" },
+          "text": { "en": "Intimate cinematic clip of [a person] [doing something], soft window light, shallow depth of field, subtle natural movement, emotional quiet mood, film-like color, 16:9.", "ru": "Интимный кинокадр: [человек] [что-то делает], мягкий свет из окна, малая глубина резкости, лёгкое естественное движение, тихое эмоциональное настроение, плёночный цвет, 16:9." } }
+      ]
+    },
+    {
+      "id": "v_social",
+      "name": { "en": "Video: social & vlog", "ru": "Видео: соцсети и влог" },
+      "target": "video",
+      "prompts": [
+        { "title": { "en": "Talking-head UGC", "ru": "UGC «говорящая голова»" },
+          "text": { "en": "Authentic vertical UGC clip of [a person] talking to the camera about [topic] in a casual home setting, natural light, handheld phone feel, friendly energetic delivery, realistic, 9:16.", "ru": "Аутентичный вертикальный UGC-ролик: [человек] говорит в камеру о [тема] в домашней обстановке, естественный свет, ощущение съёмки с рук на телефон, дружелюбная энергичная подача, реалистично, 9:16." } },
+        { "title": { "en": "Day-in-the-life", "ru": "День из жизни" },
+          "text": { "en": "Cozy vlog-style clip of [a person] during [a daily moment], soft natural light, gentle handheld camera, warm authentic mood, candid, lifestyle aesthetic, 9:16.", "ru": "Уютный влог-ролик: [человек] в [бытовой момент], мягкий естественный свет, лёгкая съёмка с рук, тёплое искреннее настроение, непостановочно, лайфстайл-эстетика, 9:16." } },
+        { "title": { "en": "Product UGC review", "ru": "UGC-обзор товара" },
+          "text": { "en": "Vertical UGC clip of [a person] showing and recommending [the product], natural light, casual enthusiastic tone, close-up of the product in hand, authentic and relatable, 9:16.", "ru": "Вертикальный UGC-ролик: [человек] показывает и советует [товар], естественный свет, непринуждённый увлечённый тон, крупный план товара в руке, искренне и близко зрителю, 9:16." } },
+        { "title": { "en": "Quick recipe / how-to", "ru": "Быстрый рецепт / как сделать" },
+          "text": { "en": "Fast top-down vertical clip of hands preparing [a dish / task] step by step, bright even light, crisp detail, satisfying quick cuts feel, clean and appetizing, 9:16.", "ru": "Быстрый вертикальный ролик сверху: руки готовят [блюдо/задача] шаг за шагом, яркий ровный свет, чёткая детализация, ощущение динамичной нарезки, чисто и аппетитно, 9:16." } },
+        { "title": { "en": "Before / after reveal", "ru": "До / после" },
+          "text": { "en": "Engaging vertical before-and-after reveal of [a transformation], smooth transition, satisfying moment, bright clean look, upbeat energy, 9:16.", "ru": "Цепляющий вертикальный ролик «до и после» [преображение], плавный переход, приятный момент, светлая чистая картинка, бодрая энергия, 9:16." } },
+        { "title": { "en": "Travel highlight", "ru": "Тревел-хайлайт" },
+          "text": { "en": "Vibrant vertical travel clip of [a place], smooth gimbal motion, golden light, lively atmosphere, rich colors, energetic and inspiring, 9:16.", "ru": "Сочный вертикальный тревел-ролик [место], плавное движение на стабилизаторе, золотой свет, живая атмосфера, насыщенные цвета, энергично и вдохновляюще, 9:16." } }
+      ]
+    },
+    {
+      "id": "v_action",
+      "name": { "en": "Video: action & sport", "ru": "Видео: экшн и спорт" },
+      "target": "video",
+      "prompts": [
+        { "title": { "en": "Street racing night", "ru": "Ночная уличная гонка" },
+          "text": { "en": "Cinematic street racing sequence at night, [a car] accelerating, city lights streaking on the windshield, rapid multi-angle cuts, motion blur, intense energy, smooth fast motion, 16:9.", "ru": "Кинематографичная ночная уличная гонка, [машина] разгоняется, городские огни смазываются на лобовом стекле, быстрая смена ракурсов, моушн-блюр, напряжённая энергия, плавно и быстро, 16:9." } },
+        { "title": { "en": "Off-road stunt", "ru": "Внедорожный трюк" },
+          "text": { "en": "Ultra-cinematic single shot of [a motorcycle/4x4] performing an off-road jump, dust and debris flying, dramatic low angle, dynamic camera follow, high energy, 16:9.", "ru": "Ультра-кинематографичный единый кадр: [мотоцикл/внедорожник] совершает прыжок по бездорожью, летят пыль и комья, драматичный нижний ракурс, динамичное слежение камерой, высокая энергия, 16:9." } },
+        { "title": { "en": "Sports slow-mo", "ru": "Спорт в слоумоушн" },
+          "text": { "en": "Epic slow-motion clip of [an athlete] in peak action, droplets of sweat flying, dramatic stadium light, shallow depth of field, powerful and intense, smooth slow-mo, 16:9.", "ru": "Эпичный слоумоушн-ролик: [спортсмен] на пике действия, летят капли пота, драматичный свет стадиона, малая глубина резкости, мощно и напряжённо, плавный слоу-мо, 16:9." } },
+        { "title": { "en": "Parkour chase", "ru": "Паркур-погоня" },
+          "text": { "en": "First-person-energy parkour chase across [an urban rooftop], fast dynamic camera, quick vaults and jumps, motion blur, adrenaline mood, smooth continuous motion, 16:9.", "ru": "Энергичная паркур-погоня по [городским крышам], быстрая динамичная камера, стремительные перепрыгивания, моушн-блюр, адреналин, плавное непрерывное движение, 16:9." } },
+        { "title": { "en": "Skate / BMX trick", "ru": "Трюк на скейте / BMX" },
+          "text": { "en": "Dynamic clip of [a skater/BMX rider] landing a trick, low dramatic angle, golden afternoon light, crisp motion, urban skatepark, energetic youthful vibe, 9:16.", "ru": "Динамичный ролик: [скейтер/BMX-райдер] приземляет трюк, низкий драматичный ракурс, золотой дневной свет, чёткое движение, городской скейтпарк, энергичный молодёжный вайб, 9:16." } },
+        { "title": { "en": "Stadium broadcast", "ru": "Стадион / трансляция" },
+          "text": { "en": "Realistic live-action sports broadcast clip inside a packed stadium during [a match], dynamic crowd, broadcast camera moves, vivid floodlights, exciting atmosphere, 16:9.", "ru": "Реалистичный ролик в стиле спортивной трансляции на переполненном стадионе во время [матч], живая толпа, движения трансляционных камер, яркие прожекторы, захватывающая атмосфера, 16:9." } }
+      ]
+    },
+    {
+      "id": "v_vfx",
+      "name": { "en": "Video: VFX & transform", "ru": "Видео: VFX и трансформации" },
+      "target": "video",
+      "prompts": [
+        { "title": { "en": "Elemental transformation", "ru": "Стихийная трансформация" },
+          "text": { "en": "Ultra-cinematic transformation of [a subject] into swirling [fire/water/sand] particles, the camera orbits like a drone, glowing energy, dramatic dark background, epic VFX, smooth motion, 16:9.", "ru": "Ультра-кинематографичная трансформация [субъект] в закручивающиеся частицы [огня/воды/песка], камера облетает как дрон, светящаяся энергия, драматичный тёмный фон, эпичный VFX, плавно, 16:9." } },
+        { "title": { "en": "Magic reveal", "ru": "Магическое появление" },
+          "text": { "en": "[A subject] materializing from glowing magical particles, sparks and embers swirling, dramatic rim light, cosmic background, cinematic fantasy VFX, smooth elegant motion, 16:9.", "ru": "[Субъект] материализуется из светящихся магических частиц, искры и угольки кружатся, драматичный контровой свет, космический фон, кинематографичный фэнтези-VFX, плавное элегантное движение, 16:9." } },
+        { "title": { "en": "Liquid morph", "ru": "Жидкая морф-анимация" },
+          "text": { "en": "Surreal liquid morph where [object A] smoothly transforms into [object B], glossy fluid simulation, soft studio light, clean background, satisfying seamless motion, 1:1.", "ru": "Сюрреалистичная жидкая морф-анимация: [объект A] плавно превращается в [объект B], глянцевая симуляция жидкости, мягкий студийный свет, чистый фон, приятное бесшовное движение, 1:1." } },
+        { "title": { "en": "Giant creature scene", "ru": "Гигантское существо" },
+          "text": { "en": "Epic VFX shot of [a giant creature] emerging over [a city], dramatic storm clouds, lightning, dynamic camera, massive sense of scale, blockbuster cinematic, 16:9.", "ru": "Эпичный VFX-кадр: [гигантское существо] появляется над [город], драматичные грозовые тучи, молнии, динамичная камера, колоссальный масштаб, блокбастер-кино, 16:9." } },
+        { "title": { "en": "Frozen-time moment", "ru": "Застывшее время" },
+          "text": { "en": "0-2s: [an action begins]. 2-5s: time freezes and the camera orbits the frozen moment, floating debris suspended in air, dramatic light, cinematic VFX, smooth motion, 16:9.", "ru": "0–2с: [действие начинается]. 2–5с: время застывает и камера облетает замерший момент, осколки висят в воздухе, драматичный свет, кинематографичный VFX, плавно, 16:9." } },
+        { "title": { "en": "Cosmic abstract", "ru": "Космическая абстракция" },
+          "text": { "en": "Mesmerizing abstract VFX of glowing [orbs/energy] drifting and merging in a dark cosmic space, iridescent colors, soft motion blur, hypnotic seamless loop, 16:9.", "ru": "Завораживающий абстрактный VFX: светящиеся [сферы/энергия] дрейфуют и сливаются в тёмном космосе, переливчатые цвета, мягкий моушн-блюр, гипнотический бесшовный зацикл, 16:9." } }
+      ]
+    },
+    {
+      "id": "v_nature",
+      "name": { "en": "Video: nature & scenery", "ru": "Видео: природа и пейзажи" },
+      "target": "video",
+      "prompts": [
+        { "title": { "en": "Mountain sunrise", "ru": "Рассвет в горах" },
+          "text": { "en": "Cinematic aerial over [mountain peaks] at sunrise, sea of clouds below, warm golden light, slow majestic drone move, epic scale, vivid natural color, smooth motion, 16:9.", "ru": "Кинематографичный облёт [горных вершин] на рассвете, море облаков внизу, тёплый золотой свет, медленное величественное движение дрона, эпический масштаб, сочные природные цвета, плавно, 16:9." } },
+        { "title": { "en": "Ocean waves", "ru": "Океанские волны" },
+          "text": { "en": "Slow-motion clip of powerful ocean waves crashing, sunlight sparkling on the water, fine spray in the air, deep blue tones, calming yet powerful, smooth slow-mo, 16:9.", "ru": "Слоумоушн мощных океанских волн, солнце искрится на воде, мелкие брызги в воздухе, глубокие синие тона, спокойно и мощно, плавный слоу-мо, 16:9." } },
+        { "title": { "en": "Forest light beams", "ru": "Лучи света в лесу" },
+          "text": { "en": "Serene clip inside [a misty forest], volumetric god rays through the trees, floating dust motes, soft slow camera drift, peaceful ASMR mood, smooth motion, 16:9.", "ru": "Умиротворяющий ролик в [туманном лесу], объёмные лучи света сквозь деревья, парящие пылинки, мягкий медленный дрейф камеры, спокойное ASMR-настроение, плавно, 16:9." } },
+        { "title": { "en": "Northern lights", "ru": "Северное сияние" },
+          "text": { "en": "Timelapse-style clip of the aurora dancing over [a snowy landscape], glowing green and violet ribbons, starry sky, gentle motion, breathtaking and calm, 16:9.", "ru": "Ролик в духе таймлапса: северное сияние танцует над [снежным пейзажем], светящиеся зелёные и фиолетовые ленты, звёздное небо, мягкое движение, захватывающе и спокойно, 16:9." } },
+        { "title": { "en": "Blooming flower macro", "ru": "Макро: распускается цветок" },
+          "text": { "en": "Macro timelapse of [a flower] blooming, petals slowly unfolding, soft natural light, dewdrops, shallow focus, vivid delicate colors, smooth motion, 16:9.", "ru": "Макро-таймлапс: распускается [цветок], лепестки медленно раскрываются, мягкий естественный свет, капли росы, неглубокий фокус, сочные нежные цвета, плавно, 16:9." } },
+        { "title": { "en": "Waterfall in jungle", "ru": "Водопад в джунглях" },
+          "text": { "en": "Lush cinematic clip of [a waterfall] in a green jungle, mist rising, sunlight through leaves, slow camera move, rich vibrant nature, smooth motion, 16:9.", "ru": "Сочный кинематографичный ролик: [водопад] в зелёных джунглях, поднимается дымка, солнце сквозь листву, медленное движение камеры, насыщенная живая природа, плавно, 16:9." } }
       ]
     }
   ]
