@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "updated": "2026-06-21",
+  "categories": [
+    {
+      "id": "portrait",
+      "name": { "en": "Portraits", "ru": "Портреты" },
+      "prompts": [
+        { "title": { "en": "Studio headshot", "ru": "Студийный портрет" }, "text": "professional studio headshot of a person, soft key light with subtle rim light, neutral seamless grey backdrop, shallow depth of field, sharp catchlight in the eyes, natural skin texture, 85mm lens look" },
+        { "title": { "en": "Golden hour close-up", "ru": "Портрет на закате" }, "text": "intimate close-up portrait at golden hour, warm backlight, soft bokeh, gentle lens flare, freckles and fine skin detail, cinematic color, 50mm f/1.4" },
+        { "title": { "en": "Dramatic B&W", "ru": "Драматичный ч/б" }, "text": "high-contrast black and white portrait, single hard light source, deep shadows, film grain, expressive mood, fine detail in eyes, classic Rembrandt lighting" },
+        { "title": { "en": "Editorial fashion", "ru": "Фэшн-съёмка" }, "text": "editorial fashion portrait, bold styling, colored gel lighting, confident pose, magazine cover aesthetic, crisp focus, high dynamic range" }
+      ]
+    },
+    {
+      "id": "product",
+      "name": { "en": "Product & e-commerce", "ru": "Товар и маркетплейс" },
+      "prompts": [
+        { "title": { "en": "Clean studio pack-shot", "ru": "Студийный пэкшот" }, "text": "professional product photography on a seamless white background, soft diffused softbox lighting, gentle reflection, crisp focus, subtle shadow, high detail, clean commercial e-commerce look" },
+        { "title": { "en": "Cosmetics on stone", "ru": "Косметика на камне" }, "text": "luxury cosmetic bottle on a textured stone slab, moody soft light, water droplets, shallow depth of field, premium advertising still life, warm highlights" },
+        { "title": { "en": "Floating splash", "ru": "Всплеск/левитация" }, "text": "dynamic product shot with the item floating, dramatic splash of liquid frozen in motion, high-speed photography, dark gradient background, sharp specular highlights" },
+        { "title": { "en": "Lifestyle flat lay", "ru": "Флэт-лей" }, "text": "top-down flat lay of a product surrounded by complementary props, soft natural window light, balanced composition, muted pastel palette, lifestyle mood" }
+      ]
+    },
+    {
+      "id": "cinematic",
+      "name": { "en": "Cinematic", "ru": "Кинематограф" },
+      "prompts": [
+        { "title": { "en": "Neo-noir street", "ru": "Нуар-улица" }, "text": "cinematic film still, rain-slicked neon city street at night, teal-and-orange color grade, anamorphic lens flares, volumetric fog, shallow depth of field, widescreen composition" },
+        { "title": { "en": "Epic landscape", "ru": "Эпичный пейзаж" }, "text": "cinematic wide shot of a vast mountain valley at dawn, god rays through mist, lone figure for scale, dramatic clouds, film grain, color graded, IMAX feel" },
+        { "title": { "en": "Sci-fi corridor", "ru": "Sci-fi коридор" }, "text": "cinematic sci-fi spaceship corridor, cold blue practical lighting, atmospheric haze, reflective floor, intricate panel detail, shallow depth of field, blockbuster look" },
+        { "title": { "en": "Cozy interior", "ru": "Уютный интерьер" }, "text": "cinematic cozy cafe interior, warm tungsten light, soft window glow, steam rising from a cup, bokeh background, inviting mood, natural color grade" }
+      ]
+    },
+    {
+      "id": "render3d",
+      "name": { "en": "3D & render", "ru": "3D и рендер" },
+      "prompts": [
+        { "title": { "en": "Clay character", "ru": "Глиняный персонаж" }, "text": "cute stylized 3D character, clay/plasticine look, soft global illumination, studio HDRI lighting, subsurface scattering, octane render, ultra detail, pastel palette" },
+        { "title": { "en": "Glass & chrome", "ru": "Стекло и хром" }, "text": "abstract 3D composition of glass and chrome shapes, ray-traced reflections and refraction, iridescent material, soft gradient background, premium render, 8k" },
+        { "title": { "en": "Isometric room", "ru": "Изометрическая комната" }, "text": "isometric 3D miniature room, physically based materials, soft shadows, warm cozy lighting, intricate props, tilt-shift, clean render" },
+        { "title": { "en": "Product render", "ru": "Рендер продукта" }, "text": "photorealistic 3D product render, studio lighting, accurate materials, subtle reflections on a glossy floor, crisp edges, advertising quality, high detail" }
+      ]
+    },
+    {
+      "id": "illustration",
+      "name": { "en": "Illustration & anime", "ru": "Иллюстрация и аниме" },
+      "prompts": [
+        { "title": { "en": "Anime key visual", "ru": "Аниме key visual" }, "text": "anime key visual, clean confident lineart, vibrant cel shading, expressive eyes, detailed background art, soft rim lighting, studio-quality illustration" },
+        { "title": { "en": "Watercolor scene", "ru": "Акварельная сцена" }, "text": "watercolor illustration, soft translucent washes, wet-on-wet bleeding edges, visible paper texture, delicate palette, airy negative space, hand-painted" },
+        { "title": { "en": "Flat vector", "ru": "Плоский вектор" }, "text": "flat vector illustration, bold geometric shapes, clean crisp edges, limited harmonious palette, minimal design, subtle long shadows, balanced composition" },
+        { "title": { "en": "Storybook art", "ru": "Книжная иллюстрация" }, "text": "whimsical children's storybook illustration, warm gouache textures, soft rounded shapes, cozy lighting, charming characters, gentle color palette" }
+      ]
+    },
+    {
+      "id": "logo",
+      "name": { "en": "Logo & graphics", "ru": "Логотип и графика" },
+      "prompts": [
+        { "title": { "en": "Minimal mark", "ru": "Минимал-знак" }, "text": "minimal vector logo, clean geometric mark, simple memorable shape, flat solid colors, balanced negative space, scalable, crisp edges, plain background" },
+        { "title": { "en": "Mascot logo", "ru": "Маскот-логотип" }, "text": "friendly mascot logo, bold clean lineart, vibrant flat colors, rounded shapes, expressive and memorable, vector style, white background" },
+        { "title": { "en": "Emblem badge", "ru": "Эмблема-бейдж" }, "text": "vintage emblem badge logo, circular layout, refined typography, symmetrical, two-color print look, crisp lines, premium craft feel" }
+      ]
+    },
+    {
+      "id": "video",
+      "name": { "en": "Video prompts", "ru": "Промпты для видео" },
+      "target": "video",
+      "prompts": [
+        { "title": { "en": "Slow cinematic push-in", "ru": "Кино-наезд" }, "text": "cinematic slow push-in toward the subject, shallow depth of field, soft volumetric light, gentle atmospheric particles, smooth steady camera motion, film grain" },
+        { "title": { "en": "Product 360 spin", "ru": "Оборот товара 360" }, "text": "product slowly rotating 360 degrees on a turntable, studio lighting, seamless background, soft reflections, smooth continuous motion, crisp focus" },
+        { "title": { "en": "Drone reveal", "ru": "Облёт дроном" }, "text": "aerial drone shot rising and revealing a vast landscape at sunrise, smooth ascending camera move, golden light, dramatic clouds, cinematic scale" },
+        { "title": { "en": "Hair/fabric in wind", "ru": "Волосы/ткань на ветру" }, "text": "close-up of hair and fabric flowing gently in the wind, soft slow motion, backlit by warm sun, delicate movement, shallow depth of field" }
+      ]
+    }
+  ]
+}
