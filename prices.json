@@ -1,0 +1,29 @@
+{
+  "_note": "Approximate prices for the comparison table. Image: $/image per resolution tier + perRef ($/reference). Video: $/second per resolution (or flat). 'audio'/'i2v' hold variant prices. Exact costs from real generations override these in-app.",
+  "image": {
+    "google/gemini-2.5-flash-image":        { "img": { "1K": 0.039, "2K": 0.039, "4K": 0.039 }, "perRef": 0.001 },
+    "google/gemini-3-pro-image-preview":     { "img": { "1K": 0.134, "2K": 0.134, "4K": 0.24 }, "perRef": 0.0015 },
+    "google/gemini-3.1-flash-image-preview": { "img": { "1K": 0.07,  "2K": 0.10,  "4K": 0.16 }, "perRef": 0.001 },
+    "openai/gpt-5-image":                    { "img": { "1K": 0.04,  "2K": 0.17,  "4K": 0.25 }, "perRef": 0.01 },
+    "openai/gpt-5-image-mini":               { "img": { "1K": 0.02,  "2K": 0.06,  "4K": 0.10 }, "perRef": 0.005 },
+    "openai/gpt-5.4-image-2":                { "img": { "1K": 0.18,  "2K": 0.36,  "4K": 0.55 }, "perRef": 0.01 }
+  },
+  "video": {
+    "alibaba/happyhorse-1.1":      { "720p": 0.0988, "1080p": 0.1278 },
+    "alibaba/happyhorse-1.0":      { "720p": 0.0988, "1080p": 0.1694 },
+    "x-ai/grok-imagine-video":     { "480p": 0.05, "720p": 0.07 },
+    "kwaivgi/kling-v3.0-pro":      { "flat": 0.112, "audio": { "flat": 0.168 } },
+    "kwaivgi/kling-v3.0-std":      { "flat": 0.084, "audio": { "flat": 0.126 } },
+    "kwaivgi/kling-video-o1":      { "flat": 0.112 },
+    "google/veo-3.1":              { "1080p": 0.20, "4K": 0.40, "audio": { "1080p": 0.40, "4K": 0.60 } },
+    "google/veo-3.1-fast":         { "720p": 0.08, "1080p": 0.10, "4K": 0.25, "audio": { "720p": 0.10, "1080p": 0.12, "4K": 0.30 } },
+    "google/veo-3.1-lite":         { "720p": 0.03, "1080p": 0.05, "audio": { "720p": 0.05, "1080p": 0.08 } },
+    "minimax/hailuo-2.3":          { "flat": 0.0817 },
+    "bytedance/seedance-2.0":      { "480p": 0.06726, "720p": 0.1512, "1080p": 0.3402, "4K": 1.361 },
+    "bytedance/seedance-2.0-fast": { "480p": 0.0538, "720p": 0.121, "1080p": 0.2722, "4K": 1.089 },
+    "bytedance/seedance-1-5-pro":  { "480p": 0.01153, "720p": 0.02592, "1080p": 0.05832, "4K": 0.2333, "audio": { "480p": 0.02306, "720p": 0.05184, "1080p": 0.1166, "4K": 0.4666 } },
+    "alibaba/wan-2.7":             { "flat": 0.10 },
+    "alibaba/wan-2.6":             { "480p": 0.04, "720p": 0.08, "1080p": 0.12, "i2v": { "720p": 0.10, "1080p": 0.15 } },
+    "openai/sora-2-pro":           { "720p": 0.30, "1080p": 0.50 }
+  }
+}
